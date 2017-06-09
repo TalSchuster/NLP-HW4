@@ -62,17 +62,16 @@ class PCFG(object):
             Generates a derivation tree from a given symbol
         """
         if self.is_terminal(symbol): return symbol
-        else:
-            expansion = self.random_expansion(symbol)
-            leaves = [self.gentree(s) for s in expansion]
-            import ipdb; ipdb.set_trace()
-            for i in xrange(leaves):
-                if self.is_preterminal(leaves[i]):
-                    leaves[i] = " ".join(symbol[i], leaves[i])
 
-            return "(" + " ".join(leaves) + ")"
+        phrase = "(" + symbol + " "
+        expansion = self.random_expansion(symbol)
 
-        return ""
+        if self.is_preterminal(expansion):
+            return "(" + symbol + " " + self.gentree(expansion[0]) + ")"
+
+        phrase += " ".join(self.gentree(s) for s in expansion)
+        return phrase + ")"
+
 
     def random_sent(self):
         return self.gen("ROOT")
