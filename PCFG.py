@@ -61,10 +61,17 @@ class PCFG(object):
         """
             Generates a derivation tree from a given symbol
         """
-        ### YOUR CODE HERE
-        raise NotImplementedError
-        ### END YOUR CODE
-        return ""
+        if self.is_terminal(symbol): return symbol
+
+        phrase = "(" + symbol + " "
+        expansion = self.random_expansion(symbol)
+
+        if self.is_preterminal(expansion):
+            return "(" + symbol + " " + self.gentree(expansion[0]) + ")"
+
+        phrase += " ".join(self.gentree(s) for s in expansion)
+        return phrase + ")"
+
 
     def random_sent(self):
         return self.gen("ROOT")
