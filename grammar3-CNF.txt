@@ -49,6 +49,31 @@
 # j
 1   VP  VerbIs NP
 
+# b1
+1   NP  NP ConjThat.VP
+1   ConjThat.VP ConjThat VP
+
+1   NP NP ConjThat.RelClause
+1   ConjThat.RelClause  ConjThat RelClause
+1   RelClause   NP Verb
+
+1   RelClause   NP VerbConj.ConjThat.RelClause
+1   VerbConj.ConjThat.RelClause  VerbConj ConjThat.RelClause
+1   ConjThat.RelClause  ConjThat RelClause
+
+# b2
+1   S           NPSingular VPSingular
+1   NPSingular  Det SingularNoun
+1   VPSingular  SingularVerb NP
+
+1   S           NPPlural VPPlural
+1   NPPlural    Det PluralNoun
+1   VPPlural    PluralVerb NP
+
+1   NPPlural    NP Conj.NP
+1   Conj.NP     Conj NP
+
+
 ################
 #### Vocabulary.
 ################
@@ -129,3 +154,10 @@
 
 # i
 1   PresentIs   is
+
+# b2
+1   SingularNoun    president
+1   PluralNoun  citizens
+
+1   SingularVerb    chooses
+1   PluralVerb  choose
