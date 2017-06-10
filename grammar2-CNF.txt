@@ -1,0 +1,122 @@
+
+1	ROOT	S .
+1	ROOT	S !
+
+
+1	S	NP VP
+1	VP	Verb NP
+1	NP	Det Noun
+0.3	NP	NP PP
+1	PP	Prep NP
+1	Noun	Adj Noun
+
+# b
+0.2  NP  NP NC
+1   NC  Conj NP
+0.2   Verb Verb VC
+1   VC  Conj Verb
+
+# d
+1   VP  VerbConj VC
+1   VC  ConjThat S
+
+# e
+1   S   Pronoun VP.Conj.S
+1   VP.Conj.S   VPConj Conj.S
+1   Conj.S   ConjThat S
+
+1 VPConj    VerbConj NP
+
+# f
+1   Adj Intensifier Adj
+
+# g
+1   VP  VerbPrep Preposition.NP
+1   Preposition.NP  Preposition NP
+
+1   NP  NP Preposition.NP
+
+# h
+1   VP  VerbIs Adj
+
+# i
+1	VP	VPPresent NP
+1   VPPresent  PresentIs VerbPP
+
+# j
+1   VP  VerbIs NP
+
+################
+#### Vocabulary.
+################
+
+1	Verb	ate
+1	Verb	wanted
+1	Verb	kissed
+1	Verb	understood
+1	Verb	pickled
+
+# d
+1   VerbConj    thought
+
+# c (converted to cnf to be VP -> Verb -> sighted)
+1	VP	sighed
+
+# e
+1   VerbConj    perplexed
+
+# g
+1   VerbPrep    worked
+
+#i
+1   VerbPP  eating
+
+1	Det	the
+1	Det	a
+1	Det	every
+
+1	Noun	president
+1	Noun	sandwich
+1	Noun	pickle
+# 1	Noun	chief of staff
+1	Noun	floor
+# g
+1   Noun    proposal
+
+1	Adj	fine
+1	Adj	delicious
+10	Adj	perplexed
+1	Adj	pickled
+# h
+1   Adj lazy
+
+1	Prep	with
+1	Prep	on
+1	Prep	under
+1	Prep	in
+
+# a
+1   NP    Sally
+
+# b
+1   Conj    and
+
+# d
+1   ConjThat    that
+
+# e
+1   Pronoun    it
+
+# f
+1 Intensifier very
+
+# g
+1   Preposition on
+
+1   Noun    desk
+
+# h
+1   VerbIs  is
+
+# i
+1   PresentIs   is
