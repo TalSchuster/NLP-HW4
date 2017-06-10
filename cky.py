@@ -84,9 +84,7 @@ def cky(pcfg, sent):
 
 if __name__ == '__main__':
     import sys
-    # pcfg = PCFG.from_file_assert_cnf(sys.argv[1])
-    # sents_to_parse = load_sents_to_parse(sys.argv[2])
-    pcfg = PCFG.from_file_assert_cnf('grammar_to_parse.txt')
-    sents_to_parse = load_sents_to_parse('simple_sents.txt')
+    pcfg = PCFG.from_file_assert_cnf(sys.argv[1])
+    sents_to_parse = load_sents_to_parse(sys.argv[2])
     for sent in sents_to_parse:
         print cky(pcfg, sent)
