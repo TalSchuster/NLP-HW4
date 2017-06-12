@@ -11,7 +11,7 @@
 1	Noun	Adj Noun
 
 # chief of staff
-1   NP  Det CHIEFOFSTAFF
+1   NP  Det CHIEF.OF.STAFF
 
 # b
 0.2  NP  NP NC
@@ -24,20 +24,20 @@
 1   VC  ConjThat S
 
 # e
-1   S   Pronoun VPCONJS
-1   VPCONJS   VPCONJ CONJS
-1   CONJS   ConjThat S
+1   S   Pronoun VP.CONJ.S
+1   VP.CONJ.S   VP.CONJ CONJ.S
+1   CONJ.S   ConjThat S
 
-1 VPCONJ    VerbConj NP
+1 VP.CONJ    VerbConj NP
 
 # f
 1   Adj Intensifier Adj
 
 # g
-1   VP  VerbPrep PREPOSITIONNP
-1   PREPOSITIONNP  Preposition NP
+1   VP  VerbPrep PREPOSITION.NP
+1   PREPOSITION.NP  Preposition NP
 
-1   NP  NP PREPOSITIONNP
+1   NP  NP PREPOSITION.NP
 
 # h
 1   VP  VerbIs Adj
@@ -83,9 +83,9 @@
 1	Noun	pickle
 1	Noun	floor
 
-1   CHIEFOFSTAFF  Chief_Of Staff
+1   CHIEF.OF.STAFF  CHIEF.OF Staff
 1   Staff   staff
-1   Chief_Of   Chief Of
+1   CHIEF.OF   Chief Of
 1   Chief  chief
 1   Of  of
 
