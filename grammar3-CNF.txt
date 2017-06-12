@@ -11,7 +11,7 @@
 1	Noun	Adj Noun
 
 # chief of staff
-1   NP  Det Chief_Of_Staff
+1   NP  Det CHIEFOFSTAFF
 
 # b
 0.2  NP  NP NC
@@ -24,54 +24,54 @@
 1   VC  ConjThat S
 
 # e
-1   S   Pronoun VP.Conj.S
-1   VP.Conj.S   VPConj Conj.S
-1   Conj.S   ConjThat S
+1   S   Pronoun VPCONJS
+1   VPCONJS   VPCONJ CONJS
+1   CONJS   ConjThat S
 
-1 VPConj    VerbConj NP
+1 VPCONJ    VerbConj NP
 
 # f
 1   Adj Intensifier Adj
 
 # g
-1   VP  VerbPrep Preposition.NP
-1   Preposition.NP  Preposition NP
+1   VP  VerbPrep PREPOSITIONNP
+1   PREPOSITIONNP  Preposition NP
 
-1   NP  NP Preposition.NP
+1   NP  NP PREPOSITIONNP
 
 # h
 1   VP  VerbIs Adj
 
 # i
-1	VP	VPPresent NP
-1   VPPresent  PresentIs VerbPP
+1	VP	VPPRESENT NP
+1   VPPRESENT  PresentIs VerbPP
 
 # j
 1   VP  VerbIs NP
 
 # b1
-1   NP  NP ConjThat.VP
-1   ConjThat.VP ConjThat VP
+1   NP  NP CONJTHATVP
+1   CONJTHATVP ConjThat VP
 
-1   NP NP ConjThat.RelClause
-1   ConjThat.RelClause  ConjThat RelClause
-1   RelClause   NP Verb
+1   NP NP CONJTHATRELCLAUSE
+1   CONJTHATRELCLAUSE  ConjThat RELCLAUSE
+1   RELCLAUSE   NP Verb
 
-1   RelClause   NP VerbConj.ConjThat.RelClause
-1   VerbConj.ConjThat.RelClause  VerbConj ConjThat.RelClause
-1   ConjThat.RelClause  ConjThat RelClause
+1   RELCLAUSE   NP VERBCONJTHATRELCLAUSE
+1   VERBCONJTHATRELCLAUSE  VerbConj CONJTHATRELCLAUSE
+1   CONJTHATRELCLAUSE  ConjThat RELCLAUSE
 
 # b2
-1   S           NPSingular VPSingular
-1   NPSingular  Det SingularNoun
-1   VPSingular  SingularVerb NP
+1   S           NPSINGULAR VPSINGULAR
+1   NPSINGULAR  Det SingularNoun
+1   VPSINGULAR  SingularVerb NP
 
-1   S           NPPlural VPPlural
-1   NPPlural    Det PluralNoun
-1   VPPlural    PluralVerb NP
+1   S           NPPLURAL VPPLURAL
+1   NPPLURAL    Det PluralNoun
+1   VPPLURAL    PluralVerb NP
 
-1   NPPlural    NP Conj.NP
-1   Conj.NP     Conj NP
+1   NPPLURAL    NP CONJNP
+1   CONJNP     Conj NP
 
 
 ################
